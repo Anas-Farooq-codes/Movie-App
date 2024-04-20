@@ -6,12 +6,11 @@ export function sidebar() {
   const genreList = {};
 
   fetchDataFromServer(
-    "https://api.themoviedb.org/3/genre/movie/list?api_key=${api_key}",
+    `https://api.themoviedb.org/3/genre/movie/list?api_key=${api_key}`,
     function ({ genres }) {
       for (const { id, name } of genres) {
         genreList[id] = name;
       }
-
       genreLink();
     }
   );
@@ -36,7 +35,7 @@ export function sidebar() {
 
     <div class="sidebar-footer">
       <p class="copyright">
-        Copyright 2023
+        Copyright 2024
         <a href="https://www.linkedin.com/in/anas-farooq06/">Cody Nerds</a>
       </p>
 
@@ -80,14 +79,14 @@ const sidebarClose = document.querySelectorAll("[menu-close]");
 
 const overlay = document.querySelector("[overlay]");
 
-addEventOnElements(sidebarTogglers, "click", function() {
+addEventsOnElements(sidebarTogglers, "click", function() {
 
     sidebar.classList.toggle("active");
     sidebarBtn.classList.toggle("active");
     overlay.classList.toggle("active");
 });
 
-addEventOnElements(sidebarClose, "click", function() {
+addEventsOnElements(sidebarClose, "click", function() {
 
     sidebar.classList.remove("active");
     sidebarBtn.classList.remove("active");

@@ -1,3 +1,4 @@
+'use strict';
 
 const api_key = "4fa2bfda616b21b007e0d3dfae071651";
 const imageBaseUrl = "https://image.tmdb.org/t/p/"
@@ -8,7 +9,7 @@ const imageBaseUrl = "https://image.tmdb.org/t/p/"
  * along with an optional parameter if has "optionalParam"
  */
 
-const fetchDataFromServer = function (url, callback, optionalParam) {
+const fetchDataFromServer = function(url, callback, optionalParam) {
 
     fetch(url)
     .then(response => response.json())
