@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinematrix</title>
+    <meta name="title" content="NETFLIX" />
+    <meta
+      name="description"
+      content="NETFLIX is a world most popular movie app"
+    />
+
+    <!-- FAVICON  -->
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+
+    <!-- Google Font Link  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Css  -->
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Custom js link  -->
+
+    <script src="/assets/js/global.js" defer></script>
+    <script src="/assets/js/index.js" type="module"></script>
+  </head>
+
+  <body>
+    <!-- Header  -->
+
+    <header class="header">
+      <a href="index.html" class="logo">
+        <img
+          src="logo cinematrix-01.svg"
+          width="240"
+          height="32"
+          alt="NETFLIX"
+        />
+      </a>
+
+      <div class="search-box" search-box>
+        <div class="search-wrapper" search-wrapper>
+          <input
+            type="text"
+            name="search"
+            aria-label="search movies"
+            placeholder="Search any movies..."
+            class="search-field"
+            autocomplete="off"
+            search-field
+          />
+
+          <img
+            src="search.png"
+            width="24"
+            height="24"
+            alt="search"
+            class="leading-icon"
+          />
+        </div>
+
+        <button class="search-btn" search-toggler>
+          <img src="close.png" width="24" height="24" alt="close search box" />
+        </button>
+      </div>
+
+      <button class="search-btn" search-toggler menu-close>
+        <img src="search.png" width="24" height="24" alt="open search box" />
+      </button>
+
+      <button class="menu-btn" menu-btn menu-toggler>
+        <img
+          src="menu.png"
+          width="24"
+          height="24"
+          alt="open menu"
+          class="menu"
+        />
+        <img
+          src="menu-close.png"
+          width="24"
+          height="24"
+          alt="close menu"
+          class="close"
+        />
+      </button>
+    </header>
+
+    <!-- SIDEBAR  -->
+
+    <nav class="sidebar" sidebar>
+      <div class="sidebar-inner">
+        <div class="sidebar-list">
+          <p class="title">Genre</p>
+
+          <a href="movie-list.html" menu-close class="sidebar-link">Action</a>
+          <a href="movie-list.html" menu-close class="sidebar-link">Horror</a>
+          <a href="movie-list.html" menu-close class="sidebar-link">Comedy</a>
+          <a href="movie-list.html" menu-close class="sidebar-link"
+            >Adventure</a
+          >
+          <a href="movie-list.html" menu-close class="sidebar-link">Drama</a>
+          <a href="movie-list.html" menu-close class="sidebar-link">Sci-Fi</a>
+        </div>
+
+        <div class="sidebar-list">
+          <p class="title">Film Industry</p>
+
+          <a href="movie-list.html" menu-close class="sidebar-link"
+            >Hollywood</a
+          >
+          <a href="movie-list.html" menu-close class="sidebar-link"
+            >Bollywood</a
+          >
+          <a href="movie-list.html" menu-close class="sidebar-link"
+            >Lollywood</a
+          >
+        </div>
+
+        <div class="sidebar-footer">
+          <p class="copyright">
+            Copyright 2023
+            <a href="https://www.linkedin.com/in/anas-farooq06/">Cody Nerds</a>
+          </p>
+
+          <a href="https://discord.gg/vMWtPsU7"
+            ><img
+              src="Cody_Nerds_Only_Logo.webp"
+              width="130"
+              height="17"
+              alt=""
+          /></a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="overlay" overlay menu-toggler></div>
+
+    <article class="container" page-content>
+      <!-- Banner  -->
+
+      <section class="banner" aria-label="popular movies">
+        <div class="banner-slider">
+          <div class="slider-item active" slider-item>
+            <img
+              src="damsel.jpg"
+              alt="Damsel"
+              class="img-cover"
+              loading="eager"
+            />
+
+            <div class="banner-content">
+              <div class="heading">Damsel</div>
+
+              <div class="meta-list">
+                <div class="meta-item">2022</div>
+
+                <div class="meta-item card-badge">6.1</div>
+              </div>
+
+              <p class="genre">Action, Adventure, Thriller, Drama</p>
+
+              <p class="banner-text">
+                A young woman agrees to marry a handsome prince -- only to
+                discover it was all a trap. She is thrown into a cave with a
+                fire-breathing dragon and must rely solely on her wits and will
+                to survive.
+              </p>
+
+              <a href="detail.html" class="btn">
+                <img
+                  src="play_circle.png"
+                  width="24"
+                  height="24"
+                  aria-hidden="true"
+                  alt="Play"
+                />
+
+                <span class="span">Watch Now</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="slider-item" slider-item>
+            <img
+              src="damsel.jpg"
+              alt="Damsel"
+              class="img-cover"
+              loading="eager"
+            />
+
+            <div class="banner-content">
+              <div class="heading">Damsel</div>
+
+              <div class="meta-list">
+                <div class="meta-item">2022</div>
+
+                <div class="meta-item card-badge">6.1</div>
+              </div>
+
+              <p class="genre">Action, Adventure, Thriller, Drama</p>
+
+              <p class="banner-text">
+                A young woman agrees to marry a handsome prince -- only to
+                discover it was all a trap. She is thrown into a cave with a
+                fire-breathing dragon and must rely solely on her wits and will
+                to survive.
+              </p>
+
+              <a href="detail.html" class="btn">
+                <img
+                  src="play_circle.png"
+                  width="24"
+                  height="24"
+                  aria-hidden="true"
+                  alt="Play"
+                />
+
+                <span class="span">Watch Now</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="slider-item" slider-item>
+            <img
+              src="damsel.jpg"
+              alt="Damsel"
+              class="img-cover"
+              loading="eager"
+            />
+
+            <div class="banner-content">
+              <div class="heading">Damsel</div>
+
+              <div class="meta-list">
+                <div class="meta-item">2022</div>
+
+                <div class="meta-item card-badge">6.1</div>
+              </div>
+
+              <p class="genre">Action, Adventure, Thriller, Drama</p>
+
+              <p class="banner-text">
+                A young woman agrees to marry a handsome prince -- only to
+                discover it was all a trap. She is thrown into a cave with a
+                fire-breathing dragon and must rely solely on her wits and will
+                to survive.
+              </p>
+
+              <a href="detail.html" class="btn">
+                <img
+                  src="play_circle.png"
+                  width="24"
+                  height="24"
+                  aria-hidden="true"
+                  alt="Play"
+                />
+
+                <span class="span">Watch Now</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="slider-item" slider-item>
+            <img
+              src="damsel.jpg"
+              alt="Damsel"
+              class="img-cover"
+              loading="eager"
+            />
+
+            <div class="banner-content">
+              <div class="heading">Damsel</div>
+
+              <div class="meta-list">
+                <div class="meta-item">2022</div>
+
+                <div class="meta-item card-badge">6.1</div>
+              </div>
+
+              <p class="genre">Action, Adventure, Thriller, Drama</p>
+
+              <p class="banner-text">
+                A young woman agrees to marry a handsome prince -- only to
+                discover it was all a trap. She is thrown into a cave with a
+                fire-breathing dragon and must rely solely on her wits and will
+                to survive.
+              </p>
+
+              <a href="detail.html" class="btn">
+                <img
+                  src="play_circle.png"
+                  width="24"
+                  height="24"
+                  aria-hidden="true"
+                  alt="Play"
+                />
+
+                <span class="span">Watch Now</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="slider-item" slider-item>
+            <img
+              src="damsel.jpg"
+              alt="Damsel"
+              class="img-cover"
+              loading="eager"
+            />
+
+            <div class="banner-content">
+              <div class="heading">Damsel</div>
+
+              <div class="meta-list">
+                <div class="meta-item">2022</div>
+
+                <div class="meta-item card-badge">6.1</div>
+              </div>
+
+              <p class="genre">Action, Adventure, Thriller, Drama</p>
+
+              <p class="banner-text">
+                A young woman agrees to marry a handsome prince -- only to
+                discover it was all a trap. She is thrown into a cave with a
+                fire-breathing dragon and must rely solely on her wits and will
+                to survive.
+              </p>
+
+              <a href="detail.html" class="btn">
+                <img
+                  src="play_circle.png"
+                  width="24"
+                  height="24"
+                  aria-hidden="true"
+                  alt="Play"
+                />
+
+                <span class="span">Watch Now</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="slider-item" slider-item>
+            <img
+              src="damsel.jpg"
+              alt="Damsel"
+              class="img-cover"
+              loading="eager"
+            />
+
+            <div class="banner-content">
+              <div class="heading">Damsel</div>
+
+              <div class="meta-list">
+                <div class="meta-item">2022</div>
+
+                <div class="meta-item card-badge">6.1</div>
+              </div>
+
+              <p class="genre">Action, Adventure, Thriller, Drama</p>
+
+              <p class="banner-text">
+                A young woman agrees to marry a handsome prince -- only to
+                discover it was all a trap. She is thrown into a cave with a
+                fire-breathing dragon and must rely solely on her wits and will
+                to survive.
+              </p>
+
+              <a href="detail.html" class="btn">
+                <img
+                  src="play_circle.png"
+                  width="24"
+                  height="24"
+                  aria-hidden="true"
+                  alt="Play"
+                />
+
+                <span class="span">Watch Now</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-control">
+
+          <div class="control-inner">
+            
+            <button class="poster-box slider-item active">
+              <img
+                src="damse-poster.jpg"
+                alt="Slide to Damsel"
+                loading="lazy"
+                draggable="false" class="img-cover"
+              />
+            </button>
+
+            <button class="poster-box slider-item ">
+                <img
+                  src="damse-poster.jpg"
+                  alt="Slide to Damsel"
+                  loading="lazy"
+                  draggable="false" class="img-cover"
+                />
+              </button>
+
+              <button class="poster-box slider-item ">
+                <img
+                  src="damse-poster.jpg"
+                  alt="Slide to Damsel"
+                  loading="lazy"
+                  draggable="false" class="img-cover"
+                />
+              </button>
+              
+              <button class="poster-box slider-item ">
+                <img
+                  src="damse-poster.jpg"
+                  alt="Slide to Damsel"
+                  loading="lazy"
+                  draggable="false" class="img-cover"
+                />
+              </button>
+
+              <button class="poster-box slider-item ">
+                <img
+                  src="damse-poster.jpg"
+                  alt="Slide to Damsel"
+                  loading="lazy"
+                  draggable="false" class="img-cover"
+                />
+              </button>
+
+              <button class="poster-box slider-item ">
+                <img
+                  src="damse-poster.jpg"
+                  alt="Slide to Damsel"
+                  loading="lazy"
+                  draggable="false" class="img-cover"
+                />
+              </button>
+
+          </div>
+        </div>
+      </section>
+
+
+
+<!-- Movie List  -->
+
+<section class="movie-list" aria-label="upcoming-movie">
+
+  <div class="title-wrapper">
+
+<h3 class="title-large">Upcoming Movies</h3>
+  </div>
+
+  <div class="slider-list">
+    <div class="slider-inner">
+      <div class="movie-card">
+        <figure class="poster-box card-banner">
+          <img src="damse-poster.jpg" alt="Damsel" class="img-cover">
+        </figure>
+
+<h4 class="title">Damsel</h4>
+
+<div class="meta-list">
+  <div class="meta-item">
+    <img src="star.png" width="20" height="20" loading="lazy" alt="rating">
+
+    <span class="span">8.4</span>
+  </div>
+
+  <div class="card-badge">2024</div>
+</div>
+
+<a href="detail.html" class="card-btn" title="Damsel"></a>
+
+      </div>
+      <div class="movie-card">
+        <figure class="poster-box card-banner">
+          <img src="damse-poster.jpg" alt="Damsel" class="img-cover">
+        </figure>
+
+<h4 class="title">Damsel</h4>
+
+<div class="meta-list">
+  <div class="meta-item">
+    <img src="star.png" width="20" height="20" loading="lazy" alt="rating">
+
+    <span class="span">8.4</span>
+  </div>
+
+  <div class="card-badge">2024</div>
+</div>
+
+<a href="detail.html" class="card-btn" title="Damsel"></a>
+
+      </div>
+      <div class="movie-card">
+        <figure class="poster-box card-banner">
+          <img src="damse-poster.jpg" alt="Damsel" class="img-cover">
+        </figure>
+
+<h4 class="title">Damsel</h4>
+
+<div class="meta-list">
+  <div class="meta-item">
+    <img src="star.png" width="20" height="20" loading="lazy" alt="rating">
+
+    <span class="span">8.4</span>
+  </div>
+
+  <div class="card-badge">2024</div>
+</div>
+
+<a href="detail.html" class="card-btn" title="Damsel"></a>
+
+      </div>
+      <div class="movie-card">
+        <figure class="poster-box card-banner">
+          <img src="damse-poster.jpg" alt="Damsel" class="img-cover">
+        </figure>
+
+<h4 class="title">Damsel</h4>
+
+<div class="meta-list">
+  <div class="meta-item">
+    <img src="star.png" width="20" height="20" loading="lazy" alt="rating">
+
+    <span class="span">8.4</span>
+  </div>
+
+  <div class="card-badge">2024</div>
+</div>
+
+<a href="detail.html" class="card-btn" title="Damsel"></a>
+
+      </div>
+      <div class="movie-card">
+        <figure class="poster-box card-banner">
+          <img src="damse-poster.jpg" alt="Damsel" class="img-cover">
+        </figure>
+
+<h4 class="title">Damsel</h4>
+
+<div class="meta-list">
+  <div class="meta-item">
+    <img src="star.png" width="20" height="20" loading="lazy" alt="rating">
+
+    <span class="span">8.4</span>
+  </div>
+
+  <div class="card-badge">2024</div>
+</div>
+
+<a href="detail.html" class="card-btn" title="Damsel"></a>
+
+      </div>
+      <div class="movie-card">
+        <figure class="poster-box card-banner">
+          <img src="damse-poster.jpg" alt="Damsel" class="img-cover">
+        </figure>
+
+<h4 class="title">Damsel</h4>
+
+<div class="meta-list">
+  <div class="meta-item">
+    <img src="star.png" width="20" height="20" loading="lazy" alt="rating">
+
+    <span class="span">8.4</span>
+  </div>
+
+  <div class="card-badge">2024</div>
+</div>
+
+<a href="detail.html" class="card-btn" title="Damsel"></a>
+
+      </div>
+      
+    </div>
+  </div>
+
+</section>
+
+
+    </article>
+  </body>
+</html>
