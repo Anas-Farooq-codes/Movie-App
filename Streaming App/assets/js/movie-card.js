@@ -20,7 +20,7 @@ export function createMovieCard(movie) {
     card.innerHTML = `
     <figure class="poster-box card-banner">
     <img src="${imageBaseUrl}w342${poster_path}" alt="${title}" class="img-cover" loading="lazy">
-    <div class="overlay-2">
+    <div class="overlay-2"> 
     <h4 class="title">${title}</h4>
         <p class="overview">${overview}</p>
     </div>

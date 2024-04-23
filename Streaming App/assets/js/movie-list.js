@@ -43,7 +43,6 @@ movieListElem.innerHTML = `
 `;
 
 
-// add movie card based on fetched item 
 
 for (const movie of movieList) {
 
