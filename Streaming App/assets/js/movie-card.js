@@ -10,6 +10,7 @@ export function createMovieCard(movie) {
         title,
         vote_average,
         release_date,
+        overview,
         id
     } = movie;
 
@@ -17,22 +18,26 @@ export function createMovieCard(movie) {
     card.classList.add("movie-card");
 
     card.innerHTML = `
-        <figure class="poster-box card-banner">
-            <img src="${imageBaseUrl}w342${poster_path}" alt="${title}" class="img-cover" loading="lazy">
-        </figure>
-        
-        <h4 class="title">${title}</h4>
-        
-        <div class="meta-list">
-            <div class="meta-item">
-                <img src="star.png" width="20" height="20" loading="lazy" alt="rating">
-                <span class="span">${vote_average.toFixed(1)}</span>
-            </div>
-            
-            <div class="card-badge">${release_date.split("-")[0]}</div>
-        </div>
-        
-        <a href="detail.html" class="card-btn" title="${title}" onclick="getMovieDetail(${id})"></a>
+    <figure class="poster-box card-banner">
+    <img src="${imageBaseUrl}w342${poster_path}" alt="${title}" class="img-cover" loading="lazy">
+    <div class="overlay-2"> <!-- Overlay for movie details -->
+    <h4 class="title">${title}</h4>
+        <p class="overview">${overview}</p>
+    </div>
+</figure>
+
+<h4 class="title">${title}</h4>
+
+<div class="meta-list">
+    <div class="meta-item">
+        <img src="star.png" width="20" height="20" loading="lazy" alt="rating">
+        <span class="span">${vote_average.toFixed(1)}</span>
+    </div>
+    
+    <div class="card-badge">${release_date.split("-")[0]}</div>
+</div>
+
+<a href="detail.html" class="card-btn" title="${title}" onclick="getMovieDetail(${id})"></a>
     `;
     
     return card;
