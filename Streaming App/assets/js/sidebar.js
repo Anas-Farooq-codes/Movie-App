@@ -33,9 +33,9 @@ export function sidebar() {
     <div class="sidebar-list">
       <p class="title">Film Industry</p>
 
-      <a href="movie-list.html" menu-close class="sidebar-link">Hollywood</a>
-      <a href="movie-list.html" menu-close class="sidebar-link">Bollywood</a>
-      <a href="movie-list.html" menu-close class="sidebar-link">Lollywood</a>
+      <a href="movie-list.html" menu-close class="sidebar-link" onclick='getMovieList("with_original_language=en", "English")'>Hollywood</a>
+      <a href="movie-list.html" menu-close class="sidebar-link" onclick='getMovieList("with_original_language=hi", "Hindi")'>Bollywood</a>
+      <a href="movie-list.html" menu-close class="sidebar-link" onclick='getMovieList("with_original_language=ur", "Urdu")'>Lollywood</a>
     </div>
 
     <div class="sidebar-footer">
@@ -59,7 +59,7 @@ const genreLink = function () {
         link.classList.add("sidebar-link")
         link.setAttribute("href", "movie-list.html");
         link.setAttribute("menu-close", "");
-        // link.setAttribute("onclick", 'getMovieList("with_genres=${genreId}","${genreName})');
+        link.setAttribute("onclick", `getMovieList("with_genres=${genreId}","${genreName}")`);
         link.textContent = genreName;
 
         sidebarInner.querySelectorAll(".sidebar-list")[0]

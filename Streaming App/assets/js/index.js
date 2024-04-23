@@ -7,6 +7,7 @@
 import { sidebar } from "./sidebar.js";
 import { api_key, imageBaseUrl, fetchDataFromServer } from "./api.js";
 import {createMovieCard} from "./movie-card.js"
+import { search } from "./search.js";
 
 const pageContent = document.querySelector("[page-content]");
 
@@ -226,3 +227,5 @@ for (const movie of movieList) {
 
 pageContent.appendChild(movieListElem);
 }
+
+search();
