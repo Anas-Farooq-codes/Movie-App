@@ -31,11 +31,20 @@ export function sidebar() {
     </div>
 
     <div class="sidebar-list">
-      <p class="title">Film Industry</p>
+      <p class="title">Language</p>
 
-      <a href="movie-list.html" menu-close class="sidebar-link" onclick='getMovieList("with_original_language=en", "English")'>Hollywood</a>
-      <a href="movie-list.html" menu-close class="sidebar-link" onclick='getMovieList("with_original_language=hi", "Hindi")'>Bollywood</a>
-      <a href="movie-list.html" menu-close class="sidebar-link" onclick='getMovieList("with_original_language=ur", "Urdu")'>Lollywood</a>
+      <a href="movie-list.html" menu-close class="sidebar-link" onclick='getMovieList("with_original_language=en", "English")'>English</a>
+      <a href="movie-list.html" menu-close class="sidebar-link" onclick='getMovieList("with_original_language=hi", "Hindi")'>Hindi</a>
+      <a href="movie-list.html" menu-close class="sidebar-link" onclick='getMovieList("with_original_language=ur", "Urdu")'>Urdu</a>
+      <a href="movie-list.html" menu-close class="sidebar-link" onclick='getMovieList("with_original_language=pa", "Punjabi")'>Punjabi</a>
+      <a href="movie-list.html" menu-close class="sidebar-link" onclick='getMovieList("with_original_language=ko", "Korean")'>Korean</a>
+      <a href="movie-list.html" menu-close class="sidebar-link" onclick='getMovieList("with_original_language=fr", "French")'>French</a>
+      <a href="movie-list.html" menu-close class="sidebar-link" onclick='getMovieList("with_original_language=tr", "Turkish")'>Turkish</a>
+      <a href="movie-list.html" menu-close class="sidebar-link" onclick='getMovieList("with_original_language=es", "Spanish")'>Spanish</a>
+      <a href="movie-list.html" menu-close class="sidebar-link" onclick='getMovieList("with_original_language=ru", "Russian")'>Russian</a>
+      <a href="movie-list.html" menu-close class="sidebar-link" onclick='getMovieList("with_original_language=de", "German")'>German</a>
+      <a href="movie-list.html" menu-close class="sidebar-link" onclick='getMovieList("with_original_language=ja", "Japanese")'>Japanese</a>
+      <a href="movie-list.html" menu-close class="sidebar-link" onclick='getMovieList("with_original_language=zh", "Mandarin")'>Chinese</a>
     </div>
 
     <div class="sidebar-footer">
