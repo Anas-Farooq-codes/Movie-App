@@ -26,7 +26,7 @@ Cinematrix is a web application developed by Cody Nerds using HTML, CSS, and Jav
 
 ## Usage
 
-To use Cinematrix, simply visit the live link here(#https://cinematrix-cn.netlify.app/) and start exploring the exciting world of movies!
+To use Cinematrix, simply visit the live link here https://cinematrix-cn.netlify.app/ and start exploring the exciting world of movies!
 
 ## Installation
 
@@ -35,3 +35,9 @@ To set up Cinematrix locally:
 1. Clone this repository to your local machine.
 2. Open the `index.html` file in your preferred web browser.
 3. Enjoy exploring movies with Cinematrix!
+
+
+## Connect with Us
+
+If you want to join our discord community,
+Click the link here: https://lnkd.in/deJxkJ_e
