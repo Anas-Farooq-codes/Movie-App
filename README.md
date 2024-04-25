@@ -40,4 +40,4 @@ To set up Cinematrix locally:
 ## Connect with Us
 
 If you want to join our discord community,
-Click the link here: https://lnkd.in/deJxkJ_e
+Click the link here: https://discord.gg/7C6hfut4
