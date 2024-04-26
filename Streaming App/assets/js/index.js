@@ -229,3 +229,6 @@ pageContent.appendChild(movieListElem);
 }
 
 search();
+
+"use strict";
+

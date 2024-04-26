@@ -27,3 +27,26 @@ const getMovieList = function (urlParam, genreName) {
     window.localStorage.setItem("urlParam", urlParam);
     window.localStorage.setItem("genreName", genreName); 
 }
+
+
+// LOADER 
+
+const preloader = document.getElementById("preloader");
+
+// Function to hide the loader
+function hideLoader() {
+    preloader.style.display = 'none';
+    document.body.style.overflow = 'auto'; // Restore scrolling
+}
+
+// Function to show the loader
+function showLoader() {
+    preloader.style.display = 'grid';
+    document.body.style.overflow = 'hidden'; // Block scrolling
+}
+
+// Show the loader
+showLoader();
+
+// Event listener to hide the loader when the window is fully loaded
+window.addEventListener('load', hideLoader);
