@@ -908,7 +908,7 @@ background-color: var(--banner-background);
   background-color: var(--surface);
   color: var(--on-surface);
   padding: 24px 20px 48px;
-  height: calc(100vh - 96px);
+  height: calc(100vh - 118px);
   overflow-y: overlay;
   z-index: 1;
 }
