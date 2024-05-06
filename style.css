@@ -781,7 +781,7 @@ padding-inline-start: 16px;
 .sidebar {
   position: absolute;
   background-color: var(--background);
-  top: 96px;
+  top: 118px;
   bottom: 0;
   left: -340px;
   max-width: 340px;
@@ -1425,7 +1425,7 @@ main {
   position: static;
   visibility: visible;
   border-block-start: 0;
-  height: calc(100vh - 104px);
+  height: calc(100vh - 132px);
 }
 
 .sidebar.active{
@@ -1443,7 +1443,7 @@ main {
 
 .container {
 
-  height: calc(100vh - 104px);
+  height: calc(100vh - 132px);
   border-top-left-radius: var(--radius-36);
 }
 
