@@ -1,1 +1,2 @@
-./assets/js/api.js
+# Ignore api.js in the assets/js/ folder
+assets/js/api.js
